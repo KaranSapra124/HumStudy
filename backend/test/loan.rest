@@ -1,0 +1,79 @@
+// Get all loans
+GET http://localhost:5000/api/v1/admin/loan/get
+
+###
+// Get loan by id
+GET http://localhost:5000/api/v1/admin/loan/get/id
+
+###
+// Get loans by category
+GET http://localhost:5000/api/v1/admin/loan/get-by-category/good
+
+###
+// Delete loan
+DELETE  http://localhost:5000/api/v1/admin/loan/delete/:id
+
+###
+// Delete all loans
+DELETE  http://localhost:5000/api/v1/admin/loan/delete-all
+
+
+###
+POST http://localhost:5000/api/v1/admin/loan/create
+content-type: application/json
+
+{
+  "category": "good",
+  "bankName": "Bank A",
+  "expectedInterestRate": { "from": 5, "to": 8 },
+  "processingFee": { "type": "percentage", "from": 1, "to": 2, "withGST": true },
+  "aptitudeExams": { 
+    "gre": { "from": 150, "to": 170 }, 
+    "gmat": { "from": 650, "to": 750 }, 
+    "sat": { "from": 1200, "to": 1400 }
+  },
+  "educationLevel": "PG",
+  "academicScore": {"percentage": { "from": 1, "to": 5 }, "number": { "from": 2, "to": 4 }},
+  "englishProficiencyScore": { 
+    "ielts": { "from": 6, "to": 8 }, 
+    "pte": { "from": 60, "to": 80 }, 
+    "toefl": { "from": 80, "to": 100 } 
+  },
+  "salary": { "from": 50000, "to": 80000 },
+  "cibilScore": { "from": 600, "to": 800 },
+  "universityWorldRank": { "from": 1, "to": 100 },
+  "withCollateral": { "eligible": true, "minAmount": 5 },
+  "withoutCollateral": { "eligible": false }
+}
+
+
+###
+POST http://localhost:5000/api/v1/admin/loan/add-by-category/below%20average
+content-type: application/json
+
+{
+  "items": [
+  {
+  "bankName": "State Bank of India",
+  "expectedInterestRate": { "from": 10, "to": 11.8 },
+  "processingFee": { "type": "number", "from": 10000, "to": 10000 },
+  "aptitudeExams": { 
+    "gre": { "from": 250, "to": 300 },
+    "gmat": { "from": 400, "to": 500 },
+    "sat": { "from": 1000, "to": 1200 }
+  },
+  "educationLevel": "PG",
+  "academicScore": { "type": "number", "from": 1, "to": 5 },
+  "englishProficiencyScore": { 
+    "ielts": { "from": 6, "to": 8 },
+    "pte": { "from": 60, "to": 80 },
+    "toefl": { "from": 80, "to": 100 }
+  },
+  "salary": { "from": 50000, "to": 80000 },
+  "cibilScore": { "from": 600, "to": 800 },
+  "universityWorldRank": { "from": 1, "to": 100 },
+  "isCollatral": { "collatralRequired": true, "minLoanAmount": 100000 },
+  "eligible": "all"
+}
+]
+}

@@ -1,0 +1,53 @@
+.dashbaord-university-card {
+  display: flex;
+  gap: 0 10px;
+  padding: 10px;
+}
+/* @media (max-width:768px) {
+    .dashbaord-university-card{
+        flex-direction: column;
+    }
+} */
+.dashbaord-university-card > img {
+  width: 100px;
+  border-radius: 5px;
+  /* aspect-ratio: 1/1; */
+}
+.dashboard-university-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dashboard-university-content > h5 {
+  color: green;
+}
+
+/* .collapse-container {
+    height: 370px;
+    max-height: 400px; 
+    overflow-y: auto; 
+  }
+  .collapse-container::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #bebdbd;
+    border-radius: 10px;
+}
+
+.collapse-container::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    background: #898989 !important;
+} */
+.timeline-horizontal {
+  flex-direction: row !important;
+}
+
+.timeline-horizontal .MuiTimelineItem-root {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-horizontal .MuiTimelineItem-root:before {
+  display: none;
+}

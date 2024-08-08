@@ -1,0 +1,167 @@
+{
+  "dashboard": {
+    "plans": [
+      {
+        "name": "Silver",
+        "active": 55
+      },
+      {
+        "name": "Gold",
+        "active": 40
+      },
+      {
+        "name": "Diamond",
+        "active": 25
+      }
+    ],
+    "sales": {
+      "total": 45000,
+      "target": 56000,
+      "categories": [
+        {
+          "name": "Accomodations",
+          "salesNum": 49,
+          "totalSales": 4000
+        },
+        {
+          "name": "Flights",
+          "salesNum": 38,
+          "totalSales": 18000
+        },
+        {
+          "name": "Loans",
+          "salesNum": 60,
+          "totalSales": 15000
+        },
+        {
+          "name": "Applications",
+          "salesNum": 80,
+          "totalSales": 4500
+        }
+      ]
+    },
+    "courses": {
+      "total": 140
+    },
+    "unis": {
+      "total": 55
+    },
+    "users": {
+      "total": 590
+    },
+    "blogs": {
+      "total": 30
+    }
+  },
+  "todos": [
+    {
+      "_id": 1,
+      "task": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam.",
+      "status": "pending"
+    },
+    {
+      "_id": 2,
+      "task": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam.",
+      "status": "completed"
+    },
+    {
+      "_id": 3,
+      "task": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam.",
+      "status": "pending"
+    },
+    {
+      "_id": 4,
+      "task": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam.",
+      "status": "completed"
+    },
+    {
+      "_id": 5,
+      "task": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam.",
+      "status": "pending"
+    },
+    {
+      "_id": 6,
+      "task": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam.",
+      "status": "completed"
+    },
+    {
+      "_id": 7,
+      "task": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam.",
+      "status": "completed"
+    },
+    {
+      "_id": 8,
+      "task": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam.",
+      "status": "pending"
+    },
+    {
+      "_id": 9,
+      "task": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, numquam.",
+      "status": "completed"
+    }
+  ],
+  "flight": {
+    "flightId": "FL123",
+    "airline": "AirTravel International",
+    "flightNumber": "ATI123",
+    "departureAirport": "John F. Kennedy International Airport (JFK)",
+    "departureTerminal": "Terminal 4",
+    "departureCity": "New York City",
+    "departureCountry": "United States",
+    "departureDateTime": "2023-12-01T10:00:00",
+    "arrivalAirport": "Heathrow Airport (LHR)",
+    "arrivalTerminal": "Terminal 5",
+    "arrivalCity": "London",
+    "arrivalCountry": "United Kingdom",
+    "arrivalDateTime": "2023-12-01T16:30:00",
+    "duration": "6 hours and 30 minutes",
+    "flightClass": "Economy",
+    "price": 500.0,
+    "availableSeats": 150,
+    "totalSeats": 200,
+    "layovers": [
+      {
+        "layoverAirport": "Dublin Airport (DUB)",
+        "layoverDuration": "2 hours"
+      }
+    ],
+    "services": [
+      "In-flight meals",
+      "Entertainment system",
+      "Wi-Fi",
+      "Power outlets"
+    ],
+    "aircraft": {
+      "model": "Boeing 777",
+      "registration": "N12345",
+      "capacity": 250,
+      "cabinCapacity": 200
+    },
+    "checkinCapacity": 300,
+    "cabinBaggage": {
+      "allowedWeight": "7 kg",
+      "dimensions": "22 x 14 x 9 inches"
+    },
+    "checkedBaggage": {
+      "allowedWeight": "23 kg",
+      "dimensions": "30 x 20 x 10 inches",
+      "additionalFee": "Varies based on weight"
+    }
+  },
+  "loan": {
+    "loanId": "LN001",
+    "loanAmount": 10000,
+    "loanTermMonths": 12,
+    "interestRate": 4.5,
+    "monthlyPayment": 875.0,
+    "loanPurpose": "Education Expenses"
+  },
+  "payments": {
+    "paymentId": "PAY001",
+    "applicationId": "APP001",
+    "amount": 875.0,
+    "paymentDate": "2023-12-15T12:00:00",
+    "status": "Paid",
+    "payerName": "John Doe"
+  }
+}

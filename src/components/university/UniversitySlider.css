@@ -1,0 +1,97 @@
+.universitySlider-section {
+  padding: 25px 15px;
+  /* background-color: #f0f2fc; */
+  padding-top: 50px;
+}
+
+.universitySlider-topbar {
+  padding-top: 2px;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.topbar-left > h4 {
+  font-weight: 600;
+}
+.topbar-left > p {
+  color: #454545;
+}
+
+.counselling-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .counselling-card {
+    background-color: transparent;
+    margin-top: 0px;
+    padding: 0;
+    min-height: 0;
+  }
+
+  .university-sideImg {
+    display: none;
+  }
+}
+.counselling-input {
+  width: 100%;
+}
+.counselling-input > .input {
+  width: 100%;
+  height: 40px;
+}
+@media (max-width: 991px) {
+  .input {
+    height: 1.2rem !important;
+  }
+  .counselling-card {
+    gap: 10px 0 !important;
+  }
+}
+.counselling-btn {
+  height: 50px !important;
+  padding: 13px 0;
+}
+
+.counselling-card > p > span {
+  color: rgb(5, 96, 193);
+  cursor: pointer;
+}
+@media (max-width: 576px) {
+  .counselling-card > p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .infoCss h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .universityInfoCss p {
+    font-size: 1rem;
+  }
+  .universityInfoCss h5 {
+    font-size: 1rem;
+  }
+}
+
+.universityInfoCss {
+  display: flex;
+  color: gray;
+  font-weight: 500;
+}
+
+/* @media (max-width: 500px) {
+  .universityInfoCss {
+    font-size: 0.8rem;
+  }
+} */

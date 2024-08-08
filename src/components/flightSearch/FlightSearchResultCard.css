@@ -1,0 +1,236 @@
+.flightSearchResultCard{
+    background-color: #fff;
+    border-radius: 15px;
+
+    border: 1px solid #dddddd;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    gap: 15px 15px;
+    width: 100%;
+    /* cursor: pointer; */
+}
+.airline-logo-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px 0;
+}
+.airline-logo-div>h6{
+    font-size: 20px;
+    color: #2c2c2c;
+}
+.airline-logo{
+    width: 70%;
+    min-width: 50px;
+    height: auto;
+}
+.flight-overview{
+    /* padding: 0 !important; */
+    border: none !important;
+    width: 100%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+}
+.flightFrom, .flightDuration, .flightPrice{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px !important; */
+}
+
+.flightDuration{
+    align-items: center;
+    /* text-align: center; */
+}
+.flightDuration>p>span{
+    color: #111;
+    font-weight: 600;
+}
+.flightDuration>hr{
+    margin: 2px 0;
+    width: 100px;
+    height: 4px !important;
+    border-color: #5D0CFD;
+}
+.flight-time{
+    font-size: 18px;
+    color: #111;
+    font-weight: 600;
+}
+.flightPrice>h6{
+    margin: 0;
+    font-size: 21px;
+}
+
+@media (max-width:991px) {
+    .airline-logo{
+        width: 80px;
+    }
+    .airline-logo-div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}
+@media (max-width:768px) {
+    .flightSearchResultCard{
+        padding: 10px 5px;
+    }
+    .airline-logo-div>h6{
+        margin: 0;
+    }
+    
+    
+    .flight-overview{
+        padding: 0 15px 0 10px !important;
+        padding-right: 0 !important;
+    }
+
+}
+@media (max-width:576px) {
+    .flight-overview{
+        padding-top: 10px !important;
+    }
+    .airline-logo{
+        width: 45px;
+    }
+    .airline-logo-div>h6{
+        font-size: 15px;
+    }
+    .flightFrom p, .flightTo p, .flightDuration p, .flightPrice p{
+        font-size: 12px;
+    }
+    .flightDuration>p{
+        font-size: 8px;
+    }
+    .flightPrice>h6{
+        font-size: 15px;
+    }
+    .flightPrice{
+        padding-left: 10px;
+    }
+   
+}
+
+
+.flight-detail-btn{
+    background-color: #5D0CFD;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+@media (max-width:1200px) {
+    
+}
+
+
+.flight-detail-btns{
+    border: 1px solid #eeeeec;
+    border-radius: 4px;
+    width: fit-content;
+    display: flex;
+}
+.flight-detail-btns>p{
+    padding: 4px 15px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #454545;
+}
+.flight-detail-btns>p.active{
+    color: #fff;
+    background-color: #5D0CFD;
+    border-radius: 4px;
+}
+
+.flight-detail-topBar{
+    display: flex;
+    gap: 0 5px;
+    align-items: center;
+}
+.flight-detail-topBar>img{
+    width: 40px;
+}
+.flight-detail-topBar>h6{
+    margin: 0;
+}
+
+.flight-detail-duration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flight-detail-duration>hr{
+    margin: 5px;
+    width: 80%;
+    height: 4px !important;
+    border-color: #5D0CFD;
+}
+
+.flight-detail-from>p:first-child, .flight-detail-to>p:first-child{
+    color: #111;
+    font-weight: 600;
+}
+.flight-detail-from p:nth-child(1), .flight-detail-to p:nth-child(1){
+    font-size: 18px;
+}
+.flight-detail-from>p, .flight-detail-to>p{
+    font-size: 14px;
+}
+
+.flight-detail-from p:nth-child(3), .flight-detail-to p:nth-child(3){
+    padding-top: 5px;
+}
+
+.bookTicketBtnBar{
+    display: flex;
+    justify-content: flex-end;
+}
+.bookTicketBtn{
+    background-color: rgb(3, 115, 3);
+    color: #fff;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+@media (max-width:576px) {
+    .flight-detail-btns{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .flight-detail-btns p{
+        font-size: 13px;
+    }
+    .flight-detail-from p:nth-child(1), .flight-detail-to p:nth-child(1){
+        font-size: 16px;
+    }
+    .flight-detail-from>p, .flight-detail-to>p{
+        font-size: 12px;
+    }
+    .flight-extra-detail>h6{
+            font-size: 15px;
+    }
+    .flight-extra-detail>p{
+            font-size: 12px;
+    }
+
+    .flight-detail-btn{
+        padding: 2px 13px;
+        font-size: 14px;
+    }
+    .bookTicketBtn{
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+    .flight-detail-duration>p{
+        font-size: 10px;
+    }
+   
+}

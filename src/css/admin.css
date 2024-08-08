@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-first: #5d0cfd;
+    --color-secondary: rgb(3, 199, 62);
+    --color-blue: rgb(6, 112, 177);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: #f7f7fa; */
+  }
+  p {
+    margin: 0 !important;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .page {
+    background: #f0f2fc;
+    padding-top: 35px;
+  }
+  
+  /* amber widget custom styling */
+  .ButtonPrimary-module-root-jHVYu {
+    background-color: var(--color-primary) !important;
+    background-image: none !important;
+  }
+  
+  .pagination-module-pagination-0OX70 button.pagination-module-active-hfJMs {
+    background-color: var(--color-primary) !important;
+    background-image: none !important;
+    border: 1px solid var(--color-primary) !important;
+  }
+  
+  .customRadio-module-custom-radio-wvA7t
+    input[type="radio"]:checked
+    + label::before {
+    border: 6px solid var(--color-primary) !important;
+  }
+  
+  .slider-module-priceSlider-xkLCW input[type="range"] {
+    color: var(--color-primary) !important;
+  }
+  
+  .autocomplete-module-primaryName-Yvm3v {
+    color: var(--color-primary) !important;
+  }
+  
+  .PriceSlider-module-clearBtn-uO49r {
+    color: var(--color-primary) !important;
+  }
+  

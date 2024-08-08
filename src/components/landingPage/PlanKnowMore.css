@@ -1,0 +1,48 @@
+.loadKnowMore-div{
+    max-height: 70vh;
+    overflow-y: auto;
+}
+.loadKnowMore-div::-webkit-scrollbar{
+    display: none;
+}
+
+.add-btn{
+    padding: 3px 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #5D0CFD;
+    color: #fff;
+    font-size: 12px;
+    width: 100px;
+}
+.planPrice{
+    position: relative;
+    /* border: 1px solid #5d0fcd; */
+    width: 100%;
+}
+.planPrice-card{
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* border: 1px solid #5d0fcd; */
+}
+.planPrice-card>.addOnImg{
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+@media (max-width:576px) {
+    .planPrice-card>.addOnImg{
+        width: 60px;
+    }
+}
+.planPriceCard-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    align-items: flex-start;
+}
+.planPriceCard-content>h5{
+    font-size: 0.97rem;
+}
+.planPriceCard-content>p{
+    color: #454545;
+}

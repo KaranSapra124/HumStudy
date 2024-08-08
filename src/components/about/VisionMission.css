@@ -1,0 +1,27 @@
+.visionMission-section{
+    padding: 25px 15px;
+    background-color: #f0f2fc;
+}
+
+.visionMission-left>img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.visionMission-right>p{
+    font-size: 19px;
+    color: #454545;
+}
+@media (max-width:991px) {
+    .vision-row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:576px) {
+    .visionMission-right>p{
+        font-size: 13px;
+    }
+
+}

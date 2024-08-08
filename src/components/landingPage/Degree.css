@@ -1,0 +1,88 @@
+.degree-section {
+  padding: 30px 15px;
+  /* background-color: #f0f2fc; */
+}
+.btn-row {
+  display: flex;
+  overflow-x: scroll;
+  gap: 0 20px;
+  padding: 5px 0;
+}
+.btn-row::-webkit-scrollbar {
+  display: none;
+}
+.degree-btn {
+  padding: 7px 35px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 4px 4px 0px rgba(151, 147, 147, 0.25);
+  transition: all 400ms ease-in-out;
+}
+.degree-more-btn {
+  width: fit-content !important;
+  padding: 3px 20px !important;
+  background-color: rgba(154, 111, 241, 0.137) !important;
+  color: #5d0cfd !important;
+  border-radius: 15px !important;
+  font-weight: 600;
+}
+@media (max-width: 576px) {
+  .degree-btn {
+    padding: 7px 25px;
+  }
+  .btn-row {
+    gap: 0 20px;
+  }
+}
+.degree-btn.active {
+  background-color: #5d0cfd;
+  color: #fff;
+  font-size: 20px;
+}
+
+.universityCard {
+  padding: 15px;
+}
+@media (max-width: 576px) {
+  .universityCard {
+    padding: 15px 0;
+  }
+}
+.university {
+  border-width: 2px; /* Set your desired border width */
+  border-style: solid;
+  border-image: linear-gradient(
+    to right,
+    #5d0cfd,
+    #ff58bb
+  ); /* Adjust the colors as needed */
+  border-image-slice: 1;
+  border-radius: 15px !important;
+  padding-bottom: 10px;
+}
+.university > h5 {
+  margin: 0;
+}
+.university > img {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.university-bottom {
+  padding: 5px;
+}
+
+.view-more-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.view-more-btn {
+  padding: 10px 35px;
+  background-color: #5d0cfd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+

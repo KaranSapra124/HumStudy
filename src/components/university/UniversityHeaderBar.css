@@ -1,0 +1,59 @@
+.universityHeader-section {
+  padding: 0px 15px;
+  /* background-color: #f0f2fc; */
+}
+.universityHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 0 40px;
+  padding: 10px 0;
+  box-shadow: 0 8px 6px -6px rgba(102, 114, 138, 0.15);
+  border-top: 1px solid #a3a3a3;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.universityHeader::-webkit-scrollbar {
+  display: none;
+}
+.universityHeader > .header-item {
+  padding: 7px 15px;
+  padding-bottom: 7px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  min-width: 130px;
+}
+
+.universityHeader > .active {
+  font-weight: 600;
+  border-bottom: 2px solid #5d0cfd;
+}
+
+.universityHeader-section.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff !important;
+  z-index: 3;
+}
+.universityHeader.sticky {
+  border: none;
+}
+@media (max-width: 576px) {
+  .universityHeader > .header-item {
+    font-size: 17px;
+  }
+}
+.universityHeaderModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.modalCss {
+  padding: 1rem;
+  
+}

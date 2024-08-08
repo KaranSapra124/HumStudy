@@ -1,0 +1,9 @@
+.loans-section{
+    padding: 30px 15px;
+    background-color: #f8fcff;
+}
+@media (max-width:576px) {
+    .loans-section{
+        padding: 30px 5px;
+    }
+}

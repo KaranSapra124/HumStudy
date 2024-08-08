@@ -1,0 +1,37 @@
+.about-section{
+    padding: 15px;
+    background-color: #1c2534;
+    padding-top: 90px;
+}
+@media (max-width:576px) {
+    .about-section{
+        padding-top: 55px;
+    }
+}
+.about{
+    padding: 25px 0;
+    padding-bottom: 40px;
+}
+.about>h2{
+    color: #fff;
+}
+.about-row{
+    display: flex;
+}
+.about-left>p{
+    font-size: 19px;
+    color: #d5d4d4;
+    text-align: justify;
+}
+.about-left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+
+@media (max-width:576px) {
+    .about-left>p{
+        font-size: 13px;
+        
+    }
+}

@@ -1,0 +1,53 @@
+.customerReview-section{
+    padding: 55px 15px;
+    background-color: #1c2534;
+}
+
+
+.customerReview-left>h1{
+    color: #fff;
+    font-size: 42px;
+}
+.customerReview-right>h5{
+    font-size: 22px;
+    color: #d1cece;
+    font-weight: 400;
+}
+
+
+.customerReview-card{
+    padding: 15px;
+    background-color: #263042 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+.customerReview-card>p{
+    color: #d5d5d1;
+}
+
+.customerReview-cardBottom{
+    display: flex;
+    gap: 0 15px;
+    align-items: center;
+}
+.customerReview-cardBottom>img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.customerReview-cardBottom>p{
+    color: #d5d5d1;
+}
+@media (max-width:576px) {
+    .customerReview-section{
+        padding: 25px 15px;
+    }
+    .customerReview-left>h1{
+        font-size: 32px;
+    }
+    .customerReview-right>h5{
+        font-size: 18px;
+    }
+    
+}

@@ -1,0 +1,19 @@
+.counselors-section{
+    padding: 20px 15px;
+    /* background-color: #f0f2fc; */
+}
+.counselors>h4>span{
+    color: #5D0CFD;
+}
+.video{
+    padding-right:30px;
+    height: 230px;
+}
+.serviceImg{
+    padding: 5px;
+}
+@media (max-width:750px) {
+    .video{
+        padding-right: 0;
+    }
+}

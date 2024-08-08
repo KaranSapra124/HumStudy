@@ -1,0 +1,45 @@
+
+// Get all loan applications
+GET http://localhost:5000/api/v1/admin/loan-application/get
+
+###
+// Get a loan application by id
+GET http://localhost:5000/api/v1/admin/loan-application/get/:id
+
+###
+// Delete loan application
+DELETE http://localhost:5000/api/v1/admin/loan-application/delete/:id
+
+###
+// Delete all loan application
+DELETE http://localhost:5000/api/v1/admin/loan-application/delete-all
+
+###
+// create loan application
+POST http://localhost:5000/api/v1/admin/loan-application/create
+Content-Type: application/json
+
+{
+  "countries": "unitedkingdom",
+  "stateOfAdmission": "confirmed",
+  "plannedUniversity": "hochschule Bremen",
+  "startDate": "2023-09-01",
+  "loanAmount": {
+    "min": 5000,
+    "max": 10000
+  },
+  "loanType": "secured",
+  "paymentDeadline": "2023-08-15",
+  "loanBefore": "na",
+  "isLoanActive": false,
+  "cibilOf": "mother/father",
+  "cibilScore": 750,
+  "jobType": "private",
+  "lastExam": "ug",
+  "lastExamScore": 85,
+  "englishExam": "ielts",
+  "englishExamScore": 7.5,
+  "academicExam": "sat",
+  "academicExamScore": 1400,
+  "touchWithFinancialInstitution": "yes"
+}

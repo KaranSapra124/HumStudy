@@ -1,0 +1,15 @@
+
+
+.find-loan-left{
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  align-items: flex-start;
+  justify-content: center;
+}
+.find-loan-left>p{
+  color: #454545;
+}
+.find-loan-img{
+  width: 60%;
+}

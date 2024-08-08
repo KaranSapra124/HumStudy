@@ -1,0 +1,48 @@
+.evaluate-div{
+    
+    /* max-height: 90vh; */
+    /* height: 450px; */
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+}
+
+
+.evaluate-div::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #bebdbd;
+    border-radius: 10px;
+}
+
+.evaluate-div::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    background: rgb(184,7,210) !important;
+    background: linear-gradient(90deg, rgba(184,7,210,1) 0%, rgba(93,12,253,1) 91%) !important;
+}
+
+
+.evaluate-div>h5{
+    color: #fff;
+}
+.evaluate>p{
+    font-size: 13px;
+    color: #f5f5f7;
+}
+.evaluate-div label{
+    color: #f5f5f7 !important;
+}
+.evaluate{
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+.submit-btn{
+    background-color: #5d0cfd;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 9px 30px;
+    font-size: 18px;
+}

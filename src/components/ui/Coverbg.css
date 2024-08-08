@@ -1,0 +1,48 @@
+.cover {
+  height: 400px;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  gap: 40px 0;
+  padding: 15px;
+  z-index: 2;
+}
+
+.cover > h1 {
+  color: #fff;
+  font-size: 52px;
+}
+.cover > img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(70%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+@media (max-width: 767px) {
+  .cover > h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+  .cover {
+    height: 500px;
+    gap: 20px 0;
+  }
+}
+@media (max-width: 576px) {
+  .cover > h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .cover {
+    height: 500px;
+    gap: 20px 0;
+  }
+}

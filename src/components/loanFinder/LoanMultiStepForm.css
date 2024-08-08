@@ -1,0 +1,98 @@
+.loanFinder-index-section{
+    padding: 45px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    background-color: aliceblue;
+    position: relative;
+  }
+  .loanFinder-index{
+    padding: 15px 20px;
+    border-radius: 15px;
+    height: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  h4>span{
+    font-weight: bold;
+  }
+
+.statusOfAd-card, .plannedUniversity-card, .programStart-card{
+    position: relative;
+    border: 1px solid #eeeeec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:  35px 15px;
+    /* aspect-ratio: 1/1; */
+    width: 100%;
+    min-height: 150px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 2px 4px 30px rgba(0,0,0,.1);
+}
+.plannedUniversity-card, .programStart-card, .datepicker-card{
+    min-height: 80px;
+    padding: 20px 15px;
+}
+
+.statusOfAd-card.active, .plannedUniversity-card.active, .programStart-card.active{
+    border: 2px solid #5d0cfd;
+}
+.statusOfAd-card>label, .plannedUniversity-card>label, .programStart-card>label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.plannedUniversity-card>label>h5{
+    margin: 0;
+    font-size: 0.95rem;
+
+}
+.datepicker-card{
+    padding:  15px 35px;
+    background-color: #fff !important;
+    box-shadow: 2px 4px 30px rgba(0,0,0,.1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px !important;
+    min-height: 50px;
+}
+.datepicker-card>h6{
+    margin: 0;
+}
+.datepicker{
+    /* opacity: 0; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.ant-checkbox-inner{
+    border: none !important;
+    background-color: transparent !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner{
+    background-color: #5d0cfd !important;
+    border-radius: 10px !important;
+}
+.prev{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+}

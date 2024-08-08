@@ -1,0 +1,221 @@
+.navbar-logo {
+  width: 200px;
+  cursor: pointer;
+}
+.navbar {
+  top: 0; /* Ensure the navbar sticks to the very top */
+  z-index: 999; /* Ensure the navbar stays on top of other elements */
+  width: 100%; /* Ensure the navbar spans the full width of the viewport */
+  position: absolute; /* Make the navbar sticky */
+  background-color: #fff; /* Optional: background color of the navbar */
+  box-shadow: 0 8px 6px -6px rgba(102, 114, 138, 0.15); /* Shadow effect */
+}
+
+.signup-btn,
+.call-back-btn {
+  background-color: #5d0cfd;
+  color: #fff;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.nav-item {
+  font-size: 18px;
+  margin: 0 15px;
+}
+.nav-profile {
+  font-size: 18px;
+  margin: 0 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  transition: all 500ms ease;
+  background-color: #5d0cfd;
+}
+.nav-item:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 500ms ease;
+  background-color: #5d0cfd;
+}
+
+.nav-item:hover a.nav-link {
+  color: #ffffff; /* Change to your desired text color */
+}
+.logo-div {
+  position: relative;
+}
+.transparency {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  transform: translate(100%);
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 7px;
+  background-color: #fdf1f2;
+  color: #e99da6;
+  font-weight: bold;
+}
+.dropdown-toggle::after {
+  content: none !important; /* Hide the default dropdown icon */
+}
+
+#nav-search-bar {
+  display: none !important;
+}
+.nav-search-bar {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #d5d5d3;
+  border-left: none;
+  border-right: none;
+  padding: 8px 0;
+  margin: 5px 0;
+  margin-bottom: 10px;
+  /* padding: 0 10px; */
+}
+.nav-search-bar > .nav-search {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+}
+.navbar-logos1,
+.navbar-logos2 {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+.navbar-logos1 {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.navbar-logos1 > img,
+.navbar-logos2 > img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.navbar-logos1 > img {
+  width: 30px;
+  height: 30px;
+}
+
+.navbar-logos1 {
+  display: none;
+}
+.download-apps {
+  display: none;
+}
+
+.service-icon {
+  width: 30px;
+  aspect-ratio: 1/1;
+}
+.service-links:hover {
+  background-color: #f8f9fa;
+}
+
+.dropdown-menu{
+  width: 14rem;
+}
+
+.dropdown-menu > .service-links {
+  color: #111;
+  --bs-dropdown-link-active-bg: #f5f5f7;
+  --bs-dropdown-link-active-color: #111;
+}
+@media (max-width: 992px) {
+  .nav-item:hover {
+    background-color: #fff !important; /* Change to your desired background color */
+  }
+
+  .navbar-logos1 {
+    display: flex;
+  }
+  .navbar-logos2 {
+    display: none;
+  }
+  .navbar {
+    position: fixed;
+  }
+  .navbar-logo {
+    width: 150px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    top: 53px;
+    left: 0;
+    z-index: 99;
+    padding: 15px;
+    background-color: #f8f9fa;
+    /* height: 100%;  */
+    box-shadow: 0 8px 6px -6px rgba(102, 114, 138, 0.15);
+  }
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  .navbar-collapse.show {
+    min-height: 100vh;
+    height: fit-content;
+  }
+
+  #nav-search-bar {
+    display: flex !important;
+  }
+  .nav-item:hover {
+    background-color: transparent;
+  }
+  .nav-item:hover a.nav-link {
+    color: #000000;
+  }
+  .download-apps {
+    display: block;
+  }
+  .download-apps > h5 {
+    font-size: 16px;
+    color: #414141;
+  }
+  .nav-app-bar {
+    display: flex;
+    gap: 0 10px;
+    /* justify-content: space-between; */
+    flex-basis: 1;
+  }
+  .nav-app-bar > img {
+    width: 46%;
+    height: auto;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    width: 120px;
+  }
+  .transparency {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    transform: translate(100%);
+    font-size: 8px;
+    padding: 3px 7px;
+    border-radius: 7px;
+    background-color: #fdf1f2;
+    color: #e99da6;
+    font-weight: bold;
+  }
+ /* .navbar{
+  position: fixed;
+ } */
+}

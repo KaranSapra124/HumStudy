@@ -1,0 +1,22 @@
+.university-slider {
+    height: 450px;
+    width: 100%;
+  }
+  @media (max-width:991px) {
+      .university-slider{
+          height: 400px;
+      }
+  }
+  @media (max-width:576px) {
+      .university-slider{
+          height: 250px;
+          padding: 0 !important;
+      }
+      
+  }
+  
+  .slider-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }

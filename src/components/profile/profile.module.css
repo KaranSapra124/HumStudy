@@ -1,0 +1,57 @@
+.container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 50px auto;
+  margin-bottom: 10px;
+  max-width: 1200px;
+  width: 90dvw;
+}
+.container h3 {
+  font-size: 20px;
+}
+
+.formContent {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(200px, 1fr));
+  gap: 30px;
+  row-gap: 20px;
+}
+.formContent label {
+  font-size: 12px;
+  color: gray;
+}
+label{
+  font-size: 12px;
+  color: gray;
+ 
+}
+.switch>button{
+  padding: 8px 35px;
+  border: 1px solid #454545;
+  background-color: transparent;
+  color: #454545;
+  border-radius: 7px;
+}
+.switch>.active{
+  padding: 8px 35px;
+  background-color: #5d0cfd;
+  border: none;
+  color: #fff;
+  border-radius: 7px;
+}
+
+@media (min-width: 768px) {
+  .formContent {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+  .container {
+    padding-inline: 80px;
+  }
+}
+@media (max-width:576px) {
+  .container{
+    margin: 30px auto;
+    padding: 15px;
+  }
+}

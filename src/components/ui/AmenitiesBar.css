@@ -1,0 +1,42 @@
+.amenitiesBar-section{
+    padding: 10px 15px;
+    /* background-color: #f0f2fc; */
+}
+.amenitiesBar{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #a3a3a3;
+
+}
+.amenities{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    padding: 5px 10px;
+}
+.amenity{
+    display: inline-flex;
+    gap: 0 10px;
+    padding: 5px 25px;
+    border-radius: 25px;
+    background-color: #f5f5f7;
+}
+.amenity>p{
+    color: #454545;
+}
+@media (max-width:576px) {
+    .amenitiesBar>h5{
+        font-size: 18px;
+    }
+    .amenities{
+        justify-content: flex-start;
+    }
+    .amenity{
+        padding: 5px 15px;
+        min-width: 40%;
+    }
+    .amenity>p{
+        font-size: 13px;
+    }
+}

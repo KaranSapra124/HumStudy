@@ -1,0 +1,23 @@
+.universityInfoBar-section{
+    padding: 10px 15px;
+    /* background-color: #f0f2fc; */
+}
+.universityInfoBar{
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #a3a3a3;
+}
+.universityInfoBar>p{
+    color: #454545;
+}
+@media (max-width:576px) {
+    .universityInfoBar>h5, .gallary>h5, .reviews>h5{
+        font-size: 18px;
+    }
+    .universityInfoBar>p{
+        font-size: 14px;
+    }
+    
+}
+

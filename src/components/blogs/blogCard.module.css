@@ -1,0 +1,32 @@
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  border-bottom: 1px solid lightgray;
+}
+.card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card h3 {
+  font-size: 22px;
+}
+.card a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s;
+  width: fit-content;
+  margin-top: 10px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card a:hover {
+  gap: 30px;
+  color: var(--color-primary);
+}

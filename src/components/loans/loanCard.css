@@ -1,0 +1,124 @@
+.loan-card {
+  background-color: #fff;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  position: relative;
+}
+.loan-card-top-bar {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+.loan-card-top-bar > img {
+  width: 70px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.loan-card-middle-bar {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.call-div > h5,
+.call-div > h4 {
+  color: #fff;
+}
+
+.evaluate-btn,
+.know-more-btn {
+  background-color: #5d0cfd;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
+.loan-card-buttons {
+  display: flex;
+  gap: 0 20px;
+  flex-wrap: wrap;
+}
+.know-more-btn {
+  background-color: transparent;
+  color: #454545;
+  border: 1px solid #454545;
+}
+.loan-card-buttons > p {
+  font-size: 12px;
+  bottom: 5px;
+  left: 20px;
+  position: absolute;
+  color: #0a8fe9;
+}
+.loan-model {
+  /* width: 80vw !important; */
+  /* height: 80vh !important; */
+}
+
+.avail-card,
+.reqDocs-card,
+.knowMore-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none !important;
+  /* gap: 15px 0; */
+  background-color: transparent !important;
+  color: #fff;
+  /* background: rgb(184,7,210) !important;
+    background: linear-gradient(90deg, rgba(184,7,210,1) 0%, rgba(93,12,253,1) 71%) !important; */
+}
+.reqDocs-card {
+  max-height: 450px;
+}
+.avail-card-top > h2,
+.reqDocs-card-top > h2 {
+  color: #fff;
+  text-align: center;
+}
+.avail-card-top > h5 {
+  color: #f5f5f7;
+  text-align: center;
+  font-weight: 400;
+}
+.reqDocs-card-top > ul > li {
+  color: #f5f5f7;
+}
+.knowMore-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px 0;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.knowMore-card > p {
+  color: #f5f5f7;
+}
+.avail-card > img,
+.reqDocs-card > img {
+  height: 220px;
+  width: auto;
+  /* aspect-ratio: 1/1; */
+}
+.loan-model .ant-modal-content {
+  background: rgb(184, 7, 210) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(184, 7, 210, 1) 0%,
+    rgba(93, 12, 253, 1) 91%
+  ) !important;
+  height: 100% !important;
+}
+.loan-model .ant-modal-close-x {
+  color: #f5f5f7 !important;
+}
+
+@media screen and (max-width: 500px) {
+  .alignPara {
+    text-align: center;
+  }
+}

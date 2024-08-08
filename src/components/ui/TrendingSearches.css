@@ -1,0 +1,42 @@
+.trending-searches-section{
+    padding: 25px 15px;
+    /* background-color: #f0f2fc; */
+}
+.trending-searches-content{
+    padding: 15px 0;
+    font-size: 17px;
+}
+.trending-searches-content>h6{
+    font-size: 17px;
+}
+.trending-searches-content>p{
+    margin: 5px 0 !important;
+    color: #454545;
+}
+.trending-searches-content>p:hover{
+    color: #5D0CFD;
+    cursor: pointer;
+}
+@media (max-width:991px) {
+    
+    .cities-bg{
+        height: 120px;
+    }
+}
+@media (max-width:576px) {
+    .trending-searches>h4{
+        font-size: 18px;
+    }
+    .trending-searches-content>h6{
+        font-size: 19px;
+    }
+    .trending-searches-content>p{
+        font-size: 14px;
+    }
+    .cities-bg{
+        height: 75px;
+    }
+    .trending-searches-content>p{
+        font-size: 13px;
+    }
+}

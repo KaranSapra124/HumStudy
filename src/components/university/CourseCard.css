@@ -1,0 +1,85 @@
+.courseCard{
+    background-color: #f6f6f6 !important;
+    padding: 15px;
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    gap: 7px 0;
+}
+.courseCard>h5{
+    font-size: 0.99rem;
+}
+.courseModel{
+    height: 75vh;
+    max-height: 75vh;
+    overflow-y: auto;
+}
+.courseModel::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #bebdbd;
+    border-radius: 10px;
+    display: none;
+}
+
+.courseFeatures{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.courseFeature{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+}
+.courseFeature>p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #454545;
+}
+.courseFeature>p:last-child{
+    font-size: 15px;
+    font-weight: 600;
+    color: #111;
+}
+.brochure-btn{
+    border: none;
+    padding: 6px 15px;
+    width: 100%;
+    background-color: #5D0CFD;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  0 10px;
+}
+
+@media (max-width:576px) {
+    .courseCard>h5{
+        font-size: 17px;
+    }
+    .courseFeature>p{
+        font-size: 13px;
+    }
+    .courseFeature>p:last-child{
+        font-size: 14px;
+        
+    }
+    .brochure-btn{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:400px) {
+    .universityInfoCss{
+        align-items: center;
+    }
+    .universityInfoCss > h5{
+        font-size: 0.5rem;
+    }
+    .universityInfoCss > p{
+        font-size: 0.5rem;
+    }
+}

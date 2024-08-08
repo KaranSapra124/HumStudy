@@ -1,0 +1,91 @@
+.modal {
+  position: fixed;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -100%);
+  min-width: 100px;
+  min-height: 100px;
+  max-height: 90vh;
+  max-width: 90vw;
+  box-shadow: 1px 1px 5px 0 gray;
+  border-radius: 5px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  /* overflow-x: hidden;
+  overflow-y: auto; */
+}
+.modal > h2 {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-bottom: 1px solid lightgray;
+  height: 60px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+.modal > div {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(90vh - 60px);
+}
+.modal > form {
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(90vh - 60px);
+}
+/* .modal > div::-webkit-scrollbar {
+  width: 5px;
+}
+.modal > div::-webkit-scrollbar-thumb {
+  background: var(--blue-dark);
+  border-radius: 5px;
+} */
+.closeButton {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  z-index: 1001;
+}
+.closeButton div {
+  width: 40%;
+  height: 3px;
+  background: lightgray;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.closeButton div:last-child {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 600px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .modal {
+    width: 90vw;
+  }
+  .modal > h2 {
+    font-size: 14px;
+  }
+}

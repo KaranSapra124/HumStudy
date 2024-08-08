@@ -1,0 +1,24 @@
+.upload-div{
+    display: flex;
+    gap: 20px 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.upload-div>p{
+    color: rgb(41, 71, 162);
+}
+.ant-upload-list-item-container{
+    display: none;
+}
+@media (max-width:576px) {
+    .upload-div{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .profile-score-div{
+        padding: 10px 0;
+    }
+}
+.form-label{
+    color:#454545;
+}
