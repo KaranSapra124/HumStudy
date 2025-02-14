@@ -1,7 +1,12 @@
 # HumStudy
 
-Link to project -> humstudy.com
 HumStudy is a comprehensive EdTech platform built using the MERN stack, designed to cater to the diverse needs of students pursuing higher education. The platform provides a one-stop solution for students, enabling them to build profiles, upload documents, apply to abroad universities, seek education loans, and even book flights. With robust user and admin panels, HumStudy ensures a seamless experience for all its users.
+
+---
+
+## Link
+
+Link to project -> humstudy.com
 
 ---
 
