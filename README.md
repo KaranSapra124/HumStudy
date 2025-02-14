@@ -6,7 +6,7 @@ HumStudy is a comprehensive EdTech platform built using the MERN stack, designed
 
 ## Link
 
-Link to project -> humstudy.com
+Link to project -> www.humstudy.com
 
 ---
 
@@ -69,7 +69,7 @@ Link to project -> humstudy.com
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/KaranSapra124/humstudy.git
+   git clone https://github.com/KaranSapra124/HumStudy.git
    ```
 
 2. Navigate to the project directory:
