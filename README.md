@@ -72,22 +72,17 @@ Link to project -> www.humstudy.com
    git clone https://github.com/KaranSapra124/HumStudy.git
    ```
 
-2. Navigate to the project directory:
+2. Install dependencies for both frontend and backend:
    ```bash
-   cd humstudy
+     npm install (frontend)
+   cd ./backend && npm install
    ```
 
-3. Install dependencies for both frontend and backend:
-   ```bash
-   cd frontend && npm install
-   cd ../backend && npm install
-   ```
-
-4. Set up environment variables:
+3. Set up environment variables:
    - Create `.env` files in both `frontend` and `backend` directories.
    - Add keys for database connection, JWT secrets, and third-party integrations (e.g., email services, flight APIs).
 
-5. Run the application:
+4. Run the application:
    - For the backend:
      ```bash
      npm run dev
